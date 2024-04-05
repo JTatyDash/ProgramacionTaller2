@@ -10,5 +10,5 @@ if (number1 >= number2){
     resta = number1 - number2;
     console.log("El resultado de la resta es: ", resta);
 } else {
-    console.log("No es posible realizar la resta")
+    console.log("No es posible realizar la resta");
 }

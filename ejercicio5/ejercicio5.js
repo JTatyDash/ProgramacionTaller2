@@ -4,5 +4,19 @@
 
 //Ejemplo. si recorre 100 km en 4 horas, ha ido a una velocidad de 100/4 que son 25km/h. Estaría descalificado.
 
-length
-time
+const dataFromConsole = process.argv;
+
+const meter = +dataFromConsole[2];
+const centimeter = meter * 100;
+const length = centimeter / 1000;
+console.log("Kilometros: ", length);
+
+const time = +dataFromConsole[3];
+const speed = length / time;
+console.log("Velocidad: ", speed, "Km/h");
+
+if (speed >= 40){
+    console.log("El conductor paso la prueba: ");
+}else{
+    console.log("No paso la prueba, DESCALIFICADO")
+}
