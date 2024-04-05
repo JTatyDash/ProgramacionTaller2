@@ -6,17 +6,14 @@
 
 const dataFromConsole = process.argv;
 
-const meter = +dataFromConsole[2];
-const centimeter = meter * 100;
-const length = centimeter / 1000;
-console.log("Kilometros: ", length);
-
+const length = +dataFromConsole[2];
 const time = +dataFromConsole[3];
 const speed = length / time;
 console.log("Velocidad: ", speed, "Km/h");
 
-if (speed >= 40){
-    console.log("El conductor paso la prueba: ");
+if (speed >= 40 && speed <= 60){
+    console.log("FELICIDADES PASASTE!! :D");
 }else{
-    console.log("No paso la prueba, DESCALIFICADO")
+    console.log("DESCALIFICADO :(")
 }
+

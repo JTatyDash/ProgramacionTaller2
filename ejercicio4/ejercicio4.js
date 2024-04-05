@@ -5,7 +5,6 @@ const dataFromConsole = process.argv;
 
 const opcion1 = dataFromConsole[2];
 
-
 if(opcion1 == 'tren'){
     console.log("Lleve dinero para el ticket");
 }else if(opcion1 == 'coche'){

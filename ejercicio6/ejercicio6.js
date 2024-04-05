@@ -31,7 +31,6 @@ if (articulo > 10 ){
 
         let descuento =  articulo * valor_por_articulo- articulo * valor_por_articulo*0.15;
         console.log("En total por pagar es:", descuento);
-   
 }
 
 else{

@@ -8,10 +8,11 @@ const note1 = +dataFromConsole[2];
 const note2 = +dataFromConsole[3];
 const note3 = +dataFromConsole[4];
 
-const average = note1 + note2 + note3;
+const notes = note1 + note2 + note3;
+average = notes / 3;
 
 if (average < 5){
-    console.log("No aprobo")
+    console.log("Suspenso")
 }else if(average >= 5 && average <= 7){
     console.log("Aprobo")
 }else if(average > 7){
