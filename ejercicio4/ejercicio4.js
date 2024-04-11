@@ -13,4 +13,6 @@ if(opcion1 == 'tren'){
     console.log("Vas en bicicleta");
 }else if (opcion1 == 'autobus'){
     console.log("Lleve dinero para el ticket")
+}else{
+    console.log("Ingrese una de las opciones validas")
 }
