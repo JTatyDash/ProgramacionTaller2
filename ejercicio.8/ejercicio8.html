@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de impuestos</title>
+</head>
+<body>
+
+<script>
+    // Pedir al usuario su edad y sus ingresos mensuales
+    var edad = prompt("¿Cuál es tu edad?");
+    var ingresosMensuales = prompt("¿Cuáles son tus ingresos mensuales?");
+
+    // Convertir la entrada del usuario a números enteros
+    edad = parseInt(edad);
+    ingresosMensuales = parseInt(ingresosMensuales);
+
+    // Comprobar si el usuario cumple con los requisitos para tributar
+    if (edad > 16 && ingresosMensuales >= 1000) {
+        alert("Debes tributar.");
+    } else {
+        alert("No tienes que tributar.");
+    }
+</script>
+
+</body>
+</html>
